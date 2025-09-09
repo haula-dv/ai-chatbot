@@ -252,6 +252,9 @@ function PureArtifact({
     }
   }, [artifact.documentId, artifactDefinition, setMetadata]);
 
+  console.log("artifact.content", artifact.content)
+
+
   return (
     <AnimatePresence>
       {artifact.isVisible && (
