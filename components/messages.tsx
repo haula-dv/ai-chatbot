@@ -47,18 +47,19 @@ function PureMessages({
   useDataStream();
 
   useEffect(() => {
-    if (status === 'submitted') {
+    if (status === "submitted") {
       requestAnimationFrame(() => {
         const container = messagesContainerRef.current;
         if (container) {
           container.scrollTo({
             top: container.scrollHeight,
-            behavior: 'smooth',
+            behavior: "smooth",
           });
         }
       });
     }
   }, [status, messagesContainerRef]);
+
 
   return (
     <div
